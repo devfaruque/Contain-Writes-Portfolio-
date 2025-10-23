@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lummar Studio - Architectural Precision in Light</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#57B5E7',secondary:'#8DD3C7'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); }
+        .glow-effect { box-shadow: 0 0 30px rgba(87, 181, 231, 0.3); }
+        .product-glow { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); }
+        .text-glow { text-shadow: 0 0 20px rgba(255, 255, 255, 0.1); }
+        .glass-effect { backdrop-filter: blur(10px); background: rgba(45, 55, 72, 0.8); }
+        .hover-glow:hover { box-shadow: 0 0 25px rgba(87, 181, 231, 0.4); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-['Pacifico'] text-white">Your Brand Logo</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="#shop" class="text-white hover:text-primary transition-colors duration-300">Shop</a>
+                    <a href="#customize" class="text-white hover:text-primary transition-colors duration-300">Customize</a>
+                    <a href="#about" class="text-white hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-white hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-shopping-cart-line text-xl text-white hover:text-primary cursor-pointer transition-colors"></i>
+                        </div>
+                        <span class="absolute -top-2 -right-2 bg-primary text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </div>
+                    <button class="md:hidden">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-menu-line text-xl text-white"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg"></div>
+        <div class="absolute inset-0" style="background-image: url('https://readdy.ai/api/search-image?query=Minimalist%20modern%20architectural%20pendant%20lamp%20floating%20in%20dark%20space%20with%20soft%20diffused%20lighting%2C%20elegant%20metal%20finish%2C%20clean%20geometric%20design%2C%20professional%20product%20photography%2C%20dark%20gradient%20background%20with%20subtle%20glow%20effects%2C%20premium%20lighting%20fixture%2C%20contemporary%20interior%20design%20element%2C%20sophisticated%20ambiance&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center; opacity: 0.6;"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+            <div class="mb-8">
+                <img src="https://readdy.ai/api/search-image?query=Premium%20architectural%20pendant%20lamp%20with%20clean%20geometric%20lines%2C%20brushed%20metal%20finish%2C%20hanging%20elegantly%20in%20minimalist%20space%2C%20soft%20warm%20glow%2C%20contemporary%20design%2C%20professional%20product%20shot%2C%20dark%20background%20with%20subtle%20lighting%20effects%2C%20luxury%20interior%20lighting%20fixture&width=400&height=600&seq=hero002&orientation=portrait" alt="Lummar Studio Signature Lamp" class="mx-auto w-80 h-96 object-cover product-glow rounded-lg">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-light mb-6 text-glow">Architectural Precision in Light</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 text-gray-300 max-w-2xl mx-auto">Handcrafted lighting solutions that blend architectural vision with contemporary elegance</p>
+            <button class="bg-primary text-white px-8 py-4 !rounded-button font-medium text-lg hover-glow transition-all duration-300 whitespace-nowrap">
+                Explore Collection
+            </button>
+        </div>
+    </section>
+
+    <section id="featured" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-light mb-4 tracking-wide">Signature Collection</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Curated selection of our most refined architectural lighting pieces</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-700 rounded-xl p-6 hover-glow transition-all duration-300">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-lg">
+                            <img src="https://readdy.ai/api/search-image?query=Modern%20cylindrical%20pendant%20lamp%20with%20brushed%20aluminum%20finish%2C%20clean%20minimalist%20design%2C%20hanging%20from%20ceiling%2C%20warm%20LED%20glow%2C%20architectural%20lighting%20fixture%2C%20contemporary%20interior%2C%20dark%20background%20with%20soft%20ambient%20lighting&width=400&height=400&seq=prod001&orientation=squarish" alt="Cylinder Pendant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-2xl font-medium mb-2">Cylinder Pendant</h3>
+                        <p class="text-gray-400 mb-4">Minimalist cylindrical design with precision-engineered diffusion</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-light">From €299</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-amber-400"></div>
+                                <div class="w-4 h-4 rounded-full bg-white"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-700 rounded-xl p-6 hover-glow transition-all duration-300">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-lg">
+                            <img src="https://readdy.ai/api/search-image?query=Geometric%20hexagonal%20pendant%20light%20fixture%20with%20matte%20black%20finish%2C%20angular%20modern%20design%2C%20suspended%20from%20ceiling%2C%20soft%20warm%20illumination%2C%20architectural%20precision%2C%20contemporary%20minimalist%20interior%2C%20dark%20ambient%20background&width=400&height=400&seq=prod002&orientation=squarish" alt="Hex Pendant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-2xl font-medium mb-2">Hex Pendant</h3>
+                        <p class="text-gray-400 mb-4">Angular geometry meets refined illumination technology</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-light">From €349</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-amber-400"></div>
+                                <div class="w-4 h-4 rounded-full bg-white"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-700 rounded-xl p-6 hover-glow transition-all duration-300">
+                        <div class="aspect-square mb-6 overflow-hidden rounded-lg">
+                            <img src="https://readdy.ai/api/search-image?query=Spherical%20orb%20pendant%20lamp%20with%20frosted%20glass%20shade%2C%20elegant%20round%20design%2C%20hanging%20gracefully%2C%20soft%20diffused%20light%2C%20modern%20minimalist%20lighting%2C%20architectural%20interior%2C%20dark%20sophisticated%20background%20with%20gentle%20glow&width=400&height=400&seq=prod003&orientation=squarish" alt="Orb Pendant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-2xl font-medium mb-2">Orb Pendant</h3>
+                        <p class="text-gray-400 mb-4">Perfect spherical form with sophisticated light diffusion</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-light">From €279</span>
+                            <div class="flex space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-amber-400"></div>
+                                <div class="w-4 h-4 rounded-full bg-white"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20architect%20designer%20in%20modern%20minimalist%20studio%20workspace%2C%20clean%20contemporary%20office%20environment%2C%20architectural%20drawings%20and%20lighting%20fixtures%20visible%2C%20sophisticated%20professional%20portrait%2C%20natural%20lighting%2C%20creative%20workspace%20with%20design%20tools%20and%20materials&width=600&height=700&seq=about001&orientation=portrait" alt="Architect Portrait" class="w-full rounded-xl product-glow">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-light mb-8 text-glow">The Vision Behind Lummar</h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Founded by architect Elena Vasquez in 2019, Lummar Studio emerged from a passion for creating lighting that transcends mere functionality. Each piece reflects years of architectural training and an unwavering commitment to precision.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Our philosophy centers on the belief that light shapes space, and space shapes experience. Every Lummar fixture is meticulously crafted to enhance architectural environments while maintaining the clean, minimalist aesthetic that defines contemporary design.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        From our studio in Bucharest, we combine traditional craftsmanship with cutting-edge LED technology, creating pieces that are both timeless and innovative.
+                    </p>
+                    <button class="bg-transparent border-2 border-primary text-primary px-8 py-4 !rounded-button font-medium hover:bg-primary hover:text-white transition-all duration-300 whitespace-nowrap">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="py-16 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-light mb-4">Stay Illuminated</h2>
+            <p class="text-xl text-gray-400 mb-8">Subscribe to receive updates on new collections and design insights</p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 bg-gray-700 border border-gray-600 rounded-button text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors">
+                <button class="bg-primary text-white px-8 py-4 !rounded-button font-medium hover-glow transition-all duration-300 whitespace-nowrap">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-['Pacifico'] mb-4">Your Brand Logo</h3>
+                    <p class="text-gray-400 mb-6">Architectural precision in light. Handcrafted lighting solutions for contemporary spaces.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-line text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#shop" class="text-gray-400 hover:text-white transition-colors">Shop</a></li>
+                        <li><a href="#customize" class="text-gray-400 hover:text-white transition-colors">Custom Orders</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-6">Contact Info</h4>
+                    <div class="space-y-3 text-gray-400">
+                        <p class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            Bucharest, Romania
+                        </p>
+                        <p class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            hello@lummar.studio
+                        </p>
+                        <p class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            +40 123 456 789
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Lummar Studio. All rights reserved. | GDPR Compliant</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="navbar-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('glass-effect');
+                } else {
+                    navbar.classList.remove('glass-effect');
+                }
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="cart-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            let cartCount = 0;
+            const cartCounter = document.querySelector('.absolute.bg-primary');
+            const addToCartButtons = document.querySelectorAll('.group');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartCount++;
+                    cartCounter.textContent = cartCount;
+                    
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+
+    <script id="newsletter-form">
+        document.addEventListener('DOMContentLoaded', function() {
+            const subscribeButton = document.querySelector('#newsletter button');
+            const emailInput = document.querySelector('#newsletter input[type="email"]');
+            
+            subscribeButton.addEventListener('click', function() {
+                const email = emailInput.value.trim();
+                
+                if (email && email.includes('@')) {
+                    this.textContent = 'Subscribed!';
+                    this.classList.add('bg-green-500');
+                    emailInput.value = '';
+                    
+                    setTimeout(() => {
+                        this.textContent = 'Subscribe';
+                        this.classList.remove('bg-green-500');
+                    }, 2000);
+                } else {
+                    emailInput.style.borderColor = '#ef4444';
+                    setTimeout(() => {
+                        emailInput.style.borderColor = '';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'BTMW4Wzu9qARJJMNqn6tHA';
+    window.host = 'readdy.ai';
+</script>
+</body>
+</html>
